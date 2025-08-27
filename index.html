@@ -7,7 +7,74 @@
     <title>Main Page</title>
 </head>
 <body>
+    <nav id="myNav" class="overlay">
+        <!-- Overlay content -->
+        <div class="overlay-content">
+            <a href="./Pages/band.html">BAND STORY</a>
+            <a href="./Pages/history.html">ROCK HISTORY</a>
+            <a href="./Pages/piano.html">JAM THE KEYS</a>
+            <a href="./Pages/quiz.html">ROCK QUIZ</a>
+        </div>
+    </nav>
 
+    <div id="main-page">
+        <header class="header" id="main-page-header">
+            <div>HOW TO BECOME A
+                <div class="header-highlight">ROCKSTAR</div>
+            </div>
+        </header>
+
+        <div class="burger-button-container">
+            <button class="burger-button" type="button">&#9776;</button>
+        </div>
+
+        <section id="slideshow-container">
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <div class="slide-container" id="evolution-page-link">
+                    <a href="./Pages/history.html" class="page-link">Experience the Evolution<br>of 
+                        <span class="highlight-text" id="rock-highlight">ROCK</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="slide-container" id="band-page-link">
+                    <a href="./Pages/band.html" class="page-link">Start Your<br>Own 
+                        <span class="highlight-text" id="band-highlight">BAND</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="slide-container" id="keyboard-page-link">
+                    <a href="./Pages/piano.html" class="page-link">Learn To Play<br>The 
+                        <span class="highlight-text" id="keyboard-highlight">KEYBOARD</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="slide-container" id="quiz-page-link">
+                    <a href="./Pages/quiz.html" class="page-link">Test Your<br> 
+                        <span class="highlight-text" id="knowledge-highlight">KNOWLEDGE</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <div class="button-container" id="next-button-container">
+            <button type="button" id="next">&#10095;</button>
+        </div>
+        <div class="button-container" id="prev-button-container">
+            <button type="button" id="prev">&#10094;</button>
+        </div>
+        <div id="dots-container">
+            <span class="dot" id="slide1"></span>
+            <span class="dot" id="slide2"></span>
+            <span class="dot" id="slide3"></span>
+            <span class="dot" id="slide4"></span>
+        </div>
+    </div>   
 </body>
 </html>
 
