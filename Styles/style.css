@@ -176,7 +176,7 @@ body {
   position: absolute;
   width: 100%;
   transform: scaleX(0);
-  height: 3px;
+  height: 2px;
   bottom: 0;
   left: 0;
   background-color: whitesmoke;
@@ -213,6 +213,14 @@ body {
   font-family: 'Metal Mania';
   font-size: 3rem;
   text-shadow: 0 0 1.25rem black, 0 0 1.25rem black, 0 0 1.25rem black, 0 0 1.25rem black;
+  transition: transform 0.3s ease-out;
+}
+
+.page-link:hover {
+  text-decoration-line: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 7px;
+  transform: scale(1.01);
 }
 
 #evolution-page-link {background-image: url(../Images/rock-collage-fullhd.jpg);}
