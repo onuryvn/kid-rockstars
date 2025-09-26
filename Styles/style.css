@@ -426,6 +426,26 @@ body {
 	color: whitesmoke;
 }
 
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 20px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: rgb(109, 109, 109); /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 20%; /* Rounded corners */
+  font-size: 20px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
 /* history-page-main */
 #history-page-main {
 	row-gap: 17rem;
@@ -572,7 +592,7 @@ body {
 
 /* /history-page-main */
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
 	#history-page-main {
 		grid-template-columns: 1fr 11fr;
 		row-gap: 0;
