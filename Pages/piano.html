@@ -3,12 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./Styles/style.css">
+    <link rel="stylesheet" href="../Styles/style.css">
     <title>Play Keyboard</title>
 </head>
 <body>
+    <nav id="myNav" class="overlay">
+        <div class="overlay-content">
+            <a href="../index.html">HOME</a>
+            <a href="./history.html">HISTORY</a>
+            <a href="./band.html">BAND</a>
+            <a href="./quiz.html">QUIZ</a>
+        </div>
+    </nav>
 
+    <button onclick="topFunction()" id="myBtn" title="Go to top">&#11165;</button>
+
+    <div class="grid-container" id="keyboard-page">
+
+        <div class="test-header" id="keyboard-header">
+            <div class="nav-box" id="nav-box-left">
+                <a href="../index.html" class="highlight-text">HOME</a>
+                <a href="./history.html" class="highlight-text">HISTORY</a>
+            </div>
+
+            <header class="header" id="keyboard-page-header">
+                <div>PLAY THE 
+                    <div class="header-highlight">KEYBOARD</div>
+                </div>
+            </header>
+
+            <div class="nav-box" id="nav-box-right">
+                <a href="./band.html" class="highlight-text">BAND</a>
+                <a href="./quiz.html" class="highlight-text">QUIZ</a>
+            </div>
+        </div>
+
+        <div class="burger-button-container">
+            <button class="burger-button" type="button">&#9776;</button>
+        </div>
+
+        <section class="grid-item-main" id="keyboard-page-main">
+
+            <p class="keyboard-text" id="keyboard-text-intro">
+                Think Keyboards are just for classical nerds and synth-pop? 
+                Think again. In the right hands, a keyboard can growl, scream, whisper or explode—it’s your secret weapon to break the rules and bend the sound. 
+                You don’t need to know every scale or read sheet music like a monk. 
+                What you need is attitude, a feel for timing, and the guts to hold down a note like it’s the last thing keeping the roof from caving in.
+            </p>
+
+            <p class="keyboard-text" id="keyboard-text-main">
+                This section will <strong>not</strong> teach you how to play the Keyboard 
+                -although it says so in the title.. To be honest it just sounded better that way-
+                our only job is to give you a Keyboard, the rest is up to <strong>You</strong>!
+            </p>
+
+            <p class="keyboard-text" id="keyboard-text-end">
+                So grab your keyboard, crank that amp, and remember: You’re not “just the keyboard player.” 
+                You’re the <em>soundtrack to the chaos</em>.
+            </p>
+
+            <div id="piano_container">
+                <ul class="piano-keys-list">
+                    <li class="piano-keys white-key" data-key="F4"></li>
+                    <li class="piano-keys black-key" data-key="Gb4"></li>
+                    <li class="piano-keys white-key" data-key="G4"></li>
+                    <li class="piano-keys black-key" data-key="Ab4"></li>
+                    <li class="piano-keys white-key" data-key="A4"></li>
+                    <li class="piano-keys black-key" data-key="Bb4"></li>
+                    <li class="piano-keys white-key no-black" data-key="B4"></li>
+
+                    <li class="piano-keys white-key no-black" data-key="C5"></li>
+                    <li class="piano-keys black-key" data-key="Db5"></li>
+                    <li class="piano-keys white-key" data-key="D5"></li>
+                    <li class="piano-keys black-key" data-key="Eb5"></li>
+                    <li class="piano-keys white-key no-black" data-key="E5"></li>
+                    <li class="piano-keys white-key no-black" data-key="F5"></li>
+                    <li class="piano-keys black-key" data-key="Gb5"></li>
+                    <li class="piano-keys white-key" data-key="G5"></li>
+                    <li class="piano-keys black-key" data-key="Ab5"></li>
+                    <li class="piano-keys white-key" data-key="A5"></li>
+                    <li class="piano-keys black-key" data-key="Bb5"></li>
+                    <li class="piano-keys white-key no-black" data-key="B5"></li>
+
+                    <li class="piano-keys white-key no-black" data-key="C6"></li>
+                    <li class="piano-keys black-key" data-key="Db6"></li>
+                    <li class="piano-keys white-key" data-key="D6"></li>
+                    <li class="piano-keys black-key" data-key="Eb6"></li>
+                    <li class="piano-keys white-key" data-key="E6"></li>
+                </ul>
+            </div>
+
+        </section>
+
+    </div>
+
+    <script src="../Scripts/piano.js"></script>
 </body>
 </html>
-
-<script src="../Scripts/piano.js"></script>
