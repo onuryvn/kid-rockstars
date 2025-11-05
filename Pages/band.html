@@ -10,18 +10,33 @@
     <nav id="myNav" class="overlay">
         <div class="overlay-content">
             <a href="../index.html">HOME</a>
-            <a href="./history.html">ROCK HISTORY</a>
-            <a href="./piano.html">JAM THE KEYS</a>
-            <a href="./quiz.html">ROCK QUIZ</a>
+            <a href="./history.html">HISTORY</a>
+            <a href="./piano.html">KEYBOARD</a>
+            <a href="./quiz.html">QUIZ</a>
         </div>
     </nav>
 
+    <button onclick="topFunction()" id="myBtn" title="Go to top">&#11165;</button>
+
     <div class="grid-container" id="band-page">
-        <header class="header" id="history-page-header">
-            <div>HOW TO START A 
-                <div class="header-highlight">BAND</div>
+
+        <div class="test-header">
+            <div class="nav-box" id="nav-box-left">
+                <a href="../index.html" class="highlight-text">HOME</a>
+                <a href="./history.html" class="highlight-text">HISTORY</a>
             </div>
-        </header>
+
+            <header class="header" id="history-page-header">
+                <div>HOW TO START A 
+                    <div class="header-highlight">BAND</div>
+                </div>
+            </header>
+
+            <div class="nav-box" id="nav-box-right">
+                <a href="./piano.html" class="highlight-text">KEYBOARD</a>
+                <a href="./quiz.html" class="highlight-text">QUIZ</a>
+            </div>
+        </div>
 
         <div class="burger-button-container">
             <button class="burger-button" type="button">&#9776;</button>
@@ -31,18 +46,24 @@
         <section class="grid-item-main" id="band-page-main">
             
             <div id="band-intro-container">
-                <img id="band-intro-img" src="../Images/acdc.jpg" alt="">
+                <div class="band-member-img" id="band-intro-img">
+                <img src="../Images/acdc.jpg" alt="">
+                </div>
+                <div id="band-intro-text-ctn">
                 <p class="band-intro-text" id="band-intro-text">
                     So you want to start a band? Hell yeah. 
-                    But it all comes down to finding people who share your fire—people who’ll show up when it’s pouring rain, when they’re dead tired, and when the rent’s late.
+                    It all comes down to finding people who share your fire—people who’ll show up when it’s pouring rain, when they’re dead tired, and when the rent’s late.
                     Skill matters, but chemistry matters more. You can find a technically perfect player who bails when things get rough, or you can find someone a bit rough around the edges who’s 100% dedicated. 
-                    Pick the die‑hards. 
+                    <span class="text-metal">Pick the die‑hards.</span>
                     If you vibe over vinyl records at 2 a.m. and can laugh off every mistake, you’re golden.
                 </p>
+                </div>
             </div>
 
             <div class="band-member-container" id="drummer-container">
-                <img class="band-member-img" id="drummer-img" src="../Images/drummer.jpg" alt="">
+                <div class="band-member-img" id="drummer-img" >
+                <img src="../Images/drummer.jpg" alt="">
+                </div>
                 <h2 class="band-member-title" id="drummer-title">DRUMMER<br>The Heartbeat of Your Band</h2>
                 <p class="band-member-text" id="drummer-text">
                     No one feels the groove as viscerally as your drummer. 
@@ -54,7 +75,9 @@
             </div>
 
             <div class="band-member-container" id="guitarist-container">
-                <img class="band-member-img" id="guitarist-img" src="../Images/guitarist.jpg" alt="">
+                <div class="band-member-img" id="guitarist-img" >
+                <img src="../Images/guitarist.jpg" alt="">
+                </div>
                 <h2 class="band-member-title" id="guitarist-title">GUITARISTS<br>Riffs And Backbone</h2>
                 <p class="band-member-text" id="guitarist-text">
                     Whether it’s one guitar or two, your guitarists lay down the sonic foundation and craft the hooks that stick in people’s heads. 
@@ -66,7 +89,9 @@
             </div>
 
             <div class="band-member-container" id="bassist-container">
-                <img class="band-member-img" id="bassist-img" src="../Images/bassist-hor.webp" alt="">
+                <div class="band-member-img" id="bassist-img" >
+                <img src="../Images/bassist-hor.webp" alt="">
+                </div>
                 <h2 class="band-member-title" id="bassist-title">BASSIST<br>The Invisible Glue</h2>
                 <p class="band-member-text" id="bassist-text">
                     Bass is the secret superpower of every band: few instruments connect drums and harmony as seamlessly and powerfully. 
@@ -77,7 +102,9 @@
             </div>
 
             <div class="band-member-container" id="vocals-container">
-                <img class="band-member-img" id="vocals-img" src="../Images/cobain-hor.jpg" alt="">
+                <div class="band-member-img" id="vocals-img" >
+                <img src="../Images/cobain-hor.jpg" alt="">
+                </div>
                 <h2 class="band-member-title" id="vocals-title">VOCALS<br>The Soul of Your Sound</h2>
                 <p class="band-member-text" id="vocals-text">
                     At the end of the day, you need a voice that slaps your message right in the face. 
@@ -89,7 +116,9 @@
             </div>
 
             <div class="band-member-container" id="keyboard-container">
-                <img class="band-member-img" id="keyboard-img" src="../Images/Jon-Lord.webp" alt="">
+                <div class="band-member-img" id="keyboard-img" >
+                <img src="../Images/Jon-Lord.webp" alt="">
+                </div>
                 <h2 class="band-member-title" id="keyboard-title">KEYBOARD<br>The Secret Weapon</h2>
                 <p class="band-member-text" id="keyboard-text">
                     Not every rock band has a keyboardist—but the ones that do? You hear it. You feel it. 
@@ -103,3 +132,4 @@
     </div>
     <script src="../Scripts/band.js" type="text/javascript"></script>
 </body>
+</html>
